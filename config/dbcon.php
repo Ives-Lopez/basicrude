@@ -5,7 +5,13 @@ $password="";
 $dbname="db_users";
 
 //connection
-$conn=new mysql($servername, $username, $password, $dbname);
+$conn=new mysqli ($servername, $username, $password, $dbname);
 
-
+if($conn->connect_error){
+	die("connection error: ".$conn->connect_error);
+	
+}else{
+	// echo"connection okay";
+}
 ?>
+<!--connection for database-->

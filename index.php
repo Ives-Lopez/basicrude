@@ -1,3 +1,8 @@
+<?php
+include'../pluggins/bootstrap.php';
+include'../config/dbcon.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +22,48 @@
   
   <input type="submit" value="Add">
 </form>
+
+<center>
+	<div class="col-8">
+	<h3>USERS MANAGEMENT</h3>
+		<table class="table table-bordered tablehovered">
+			<tr>
+				<th>USER NUMBER</th>
+				<th>NAME</th>
+				<th>ADDRESS</th>
+				<th>CONTACT</th>
+
+			</tr>
+			
+			<?php
+			$sqlListofUsers="SELECT * FROM users";
+			$result=$conn->query($sqlListofUsers);
+				while($userList=$result->fetch_assoc()){
+				
+			
+			?>
+				<tr>
+					<td><?=$userList['User_number']?></td>
+					<td><?=$userList['Name']?></td>
+					<td><?=$userList['address']?></td>
+					<td><?=$userList['contact']?></td>
+				</tr>
+			
+			
+			
+			<?php
+			
+					}
+			
+			?>
+			
+		</table>
+	
+	</center>
     
+
+
+
 
 </body>
 </html>
