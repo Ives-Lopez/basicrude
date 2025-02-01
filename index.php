@@ -11,8 +11,12 @@ include'bootstrap.php';
 	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
-<h1 id="main">CRUD USER LIST</h1>
-<h2 id="cyan">User List</h2>
+
+<div class="box1">
+<h1 id="main">STUDENT LIST</h1>
+<h2 id="cyan">Name List</h2>
+<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button>
+</div>
 
 
 <div class="container mt-3">
