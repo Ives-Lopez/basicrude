@@ -2,20 +2,26 @@
     background-color: black;
     color: white;
     font-size: 25;
-}
-#cyan{
-    text-align: center;
-    color: black;
+    padding: 25;
 }
 th{
     text-align: center;
-   
+    padding-top: 50px;
 }
+.mode1 p{
+    text-align: center;
+    font-size: 25;
+    color: black;
+    
+}
+
 .box1 h2{
-    float: left;
+   float: left;
+   color:black ;
 }
 .box1 button{
-    float: right;
+   float: right;
+    
 }
 .container{
     margin-top: 50px;

@@ -7,17 +7,19 @@ include'bootstrap.php';
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD</title>
+    <title>Crud</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
 
-<div class="box1">
-<h1 id="main">USER LIST</h1>
-<h2 id="cyan">Name List</h2>
-<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button>
-</div>
 
+<h1 id="main">Crud User List</h1>
+<div class="container">
+  <div class="box1">
+    <h2>User List</h2>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add User</button>
+  </div>
+</div>
 
 <div class="container mt-3">
   <table class="table table-hover">
@@ -48,42 +50,52 @@ include'bootstrap.php';
 
   </table>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mode1">
+              <p><b>Add User</b></p>
+            </div>
+            <div class="form-group">
+              <label for="User_number">User ID</label>
+              <input type="text" name="User_number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" name="Nmae" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <input type="text" name="Address" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Contact">Contact</label>
+              <input type="text" name="Contact" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Save</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="Name">Name</label>
-            <input type="text" name="Name" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="address">Adrress</label>
-            <input type="text" name="address" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="contact">Contact</label>
-            <input type="text" name="contact" class="form-control">
-          </div>
-      </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
+  
 </div>
 
+  
 
-
-</div>
 
 
 
