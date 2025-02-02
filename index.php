@@ -61,7 +61,16 @@ include'bootstrap.php';
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label></label>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="address">Adrress</label>
+            <input type="text" name="address" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="text" name="contact" class="form-control">
           </div>
       </form>
       </div>
