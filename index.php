@@ -85,7 +85,7 @@ include'bootstrap.php';
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-secondary">Save</button>
+            <input type="submit" class="btn btn-secondary" name="add_user" value="Save">
           </div>
         </div>
       </div>
