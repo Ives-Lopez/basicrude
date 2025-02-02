@@ -9,7 +9,7 @@ if(isset($_POST['add_user'])){
     $Contact = $_POST['Contact'];
 
     if($Name == "" || empty($Name)){
-        header('location:index.php?message=You need to fill in the first name');
+        header('location:index.php?message=You need to fill in the name');
     }
     
 }
