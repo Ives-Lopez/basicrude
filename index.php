@@ -50,6 +50,15 @@ include'bootstrap.php';
 
   </table>
 
+  <?php
+
+  if(isset($_GET['message'])){
+    echo "<h6>".$_GET['message']."<h6>";
+  }
+  
+
+  ?>
+
   
 
   <!-- Modal -->
@@ -71,7 +80,7 @@ include'bootstrap.php';
               </div>
               <div class="form-group">
                 <label for="Name">Name</label>
-                <input type="text" name="Nmae" class="form-control">
+                <input type="text" name="Name" class="form-control">
               </div>
               <div class="form-group">
                 <label for="Address">Address</label>

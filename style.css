@@ -26,3 +26,7 @@ th{
 .container{
     margin-top: 50px;
 }
+h6{
+    text-align: center;
+    color: red;
+}
