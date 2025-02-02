@@ -3,6 +3,7 @@
     color: white;
     font-size: 25;
     padding: 25;
+    
 }
 
 th{
@@ -19,9 +20,11 @@ th{
 .box1 h2{
    float: left;
    color:black ;
+   
 }
 .box1 button{
    float: right;
+   color: white;
     
 }
 .container{

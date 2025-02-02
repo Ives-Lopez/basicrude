@@ -3,8 +3,6 @@ include'dbconn.php';
 
 
 if(isset($_POST['add_user'])){
-
-
     $User_number = $_POST['User_number'];
     $Name = $_POST['Name'];
     $address = $_POST['address'];

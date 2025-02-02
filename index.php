@@ -42,6 +42,8 @@ include'bootstrap.php';
         <td><?=$userList['Name']?></td>
         <td><?=$userList['address']?></td>
         <td><?=$userList['contact']?></td>
+        <td><a href="update.php id=<?php echo $userList['User_number'] ?>"class="btn btn-success">Update</a></td>
+        <td><a href="delete.php id=<?php echo $userList['User_number'] ?>" class="btn btn-danger">Delete</a></td>
       </tr>
       <?php 
           }
@@ -50,13 +52,12 @@ include'bootstrap.php';
 
   </table>
 
+        <!--message for error name and success-->
   <?php
   if(isset($_GET['message'])){
     echo "<h6>".$_GET['message']."<h6>";
   }
   ?>
-
-
   <?php
 
   if(isset($_GET['insert_msg'])){
@@ -65,7 +66,7 @@ include'bootstrap.php';
 
 
 ?>
-
+</div>
   
 
   <!-- Modal -->
@@ -83,19 +84,19 @@ include'bootstrap.php';
               </div>
               <div class="form-group">
                 <label for="User_number">User ID</label>
-                <input type="text" name="User_number" class="form-control">
+                <input type="text" name="User_number" class="form-control" placeholder="user id...">
               </div>
               <div class="form-group">
                 <label for="Name">Name</label>
-                <input type="text" name="Name" class="form-control">
+                <input type="text" name="Name" class="form-control"  placeholder="name...">
               </div>
               <div class="form-group">
                 <label for="Address">Address</label>
-                <input type="text" name="address" class="form-control">
+                <input type="text" name="address" class="form-control"  placeholder="address...">
               </div>
               <div class="form-group">
                 <label for="Contact">Contact</label>
-                <input type="text" name="contact" class="form-control">
+                <input type="text" name="contact" class="form-control"  placeholder="contact...">
               </div>
             </form>
           </div>
