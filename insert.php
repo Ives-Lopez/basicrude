@@ -3,17 +3,17 @@ include'dbconn.php';
 
 
 if(isset($_POST['add_user'])){
-    $User_number = $_POST['User_number'];
-    $Name = $_POST['Name'];
+    $id = $_POST['id'];
+    $name = $_POST['name'];
     $address = $_POST['address'];
     $contact = $_POST['contact'];
 
-    if($Name == "" || empty($Name)){
+    if($name == "" || empty($name)){
         header('location:index.php?message=You need to fill in the name!');
     }
     else{
-        $sqlListofUsers = "insert into users (User_number, Name, address, contact) value ('$User_number', '$Name', '$address', '$contact')";
-        $result=$conn->query($sqlListofUsers);
+        $row = "insert into users (id, name, address, contact) value ('$id', '$name', '$address', '$contact')";
+        $result=$conn->query($row);
         if(!$result){
             die("Failed".mysqli_error($conn));
         }

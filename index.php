@@ -33,17 +33,17 @@ include'bootstrap.php';
     </thead>
     <tbody>
       <?php
-      $sqlListofUsers="select * from users";
-      $result=$conn->query($sqlListofUsers);
+      $row="select * from users";
+      $result=$conn->query($row);
           while($userList=$result->fetch_assoc()){ 
       ?>
       <tr>
-        <td><?=$userList['User_number']?></td>
-        <td><?=$userList['Name']?></td>
+        <td><?=$userList['id']?></td>
+        <td><?=$userList['name']?></td>
         <td><?=$userList['address']?></td>
         <td><?=$userList['contact']?></td>
-        <td><a href="update.php id=<?php echo $userList['User_number'] ?>"class="btn btn-success">Update</a></td>
-        <td><a href="delete.php id=<?php echo $userList['User_number'] ?>" class="btn btn-danger">Delete</a></td>
+        <td><a href="update.php?id=<?php echo $userList['id'] ?>"class="btn btn-success">Update</a></td>
+        <td><a href="delete.php?id=<?php echo $userList['id'] ?>" class="btn btn-danger">Delete</a></td>
       </tr>
       <?php 
           }
@@ -83,19 +83,19 @@ include'bootstrap.php';
                 <p><b>Add User</b></p>
               </div>
               <div class="form-group">
-                <label for="User_number">User ID</label>
-                <input type="text" name="User_number" class="form-control" placeholder="user id...">
+                <label for="id">User ID</label>
+                <input type="text" name="id" class="form-control" placeholder="user id...">
               </div>
               <div class="form-group">
-                <label for="Name">Name</label>
-                <input type="text" name="Name" class="form-control"  placeholder="name...">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control"  placeholder="name...">
               </div>
               <div class="form-group">
-                <label for="Address">Address</label>
+                <label for="address">Address</label>
                 <input type="text" name="address" class="form-control"  placeholder="address...">
               </div>
               <div class="form-group">
-                <label for="Contact">Contact</label>
+                <label for="contact">Contact</label>
                 <input type="text" name="contact" class="form-control"  placeholder="contact...">
               </div>
             </form>
