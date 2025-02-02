@@ -53,7 +53,7 @@ include'bootstrap.php';
   
 
   <!-- Modal -->
-  <form>
+  <form action="insert.php" method="post">
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
