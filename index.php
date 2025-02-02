@@ -59,6 +59,15 @@ include'bootstrap.php';
 
   ?>
 
+  <?php
+
+  if(isset($_GET['insert_msg'])){
+    echo "<h6>".$_GET['insert_msg']."<h6>";
+  }
+
+
+?>
+
   
 
   <!-- Modal -->
