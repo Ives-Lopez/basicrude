@@ -4,6 +4,7 @@
     font-size: 25;
     padding: 25;
 }
+
 th{
     text-align: center;
     padding-top: 50px;
@@ -28,5 +29,5 @@ th{
 }
 h6{
     text-align: center;
-    color: red;
+    color: green;
 }

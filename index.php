@@ -22,7 +22,7 @@ include'bootstrap.php';
 </div>
 
 <div class="container mt-3">
-  <table class="table table-hover">
+  <table class="table table-hover table-bordered">
     <thead class="table-dark">
       <tr>
         <th>User ID</th>
@@ -40,7 +40,7 @@ include'bootstrap.php';
       <tr>
         <td><?=$userList['User_number']?></td>
         <td><?=$userList['Name']?></td>
-        <td><?=$userList['Address']?></td>
+        <td><?=$userList['address']?></td>
         <td><?=$userList['contact']?></td>
       </tr>
       <?php 
@@ -51,13 +51,11 @@ include'bootstrap.php';
   </table>
 
   <?php
-
   if(isset($_GET['message'])){
     echo "<h6>".$_GET['message']."<h6>";
   }
-  
-
   ?>
+
 
   <?php
 
@@ -93,11 +91,11 @@ include'bootstrap.php';
               </div>
               <div class="form-group">
                 <label for="Address">Address</label>
-                <input type="text" name="Address" class="form-control">
+                <input type="text" name="address" class="form-control">
               </div>
               <div class="form-group">
                 <label for="Contact">Contact</label>
-                <input type="text" name="Contact" class="form-control">
+                <input type="text" name="contact" class="form-control">
               </div>
             </form>
           </div>

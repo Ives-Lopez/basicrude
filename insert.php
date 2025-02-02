@@ -1,29 +1,28 @@
 <?php
+include'dbconn.php';
+
 
 if(isset($_POST['add_user'])){
 
 
-    $UserID = $_POST['User_number'];
+    $User_number = $_POST['User_number'];
     $Name = $_POST['Name'];
-    $Address = $_POST['Address'];
-    $Contact = $_POST['Contact'];
+    $address = $_POST['address'];
+    $contact = $_POST['contact'];
 
     if($Name == "" || empty($Name)){
-        header('location:index.php?message=You need to fill in the name');
+        header('location:index.php?message=You need to fill in the name!');
     }
     else{
-        $query = "insert into 'users' ('User_number', 'Name', 'address', 'contact')  values ('$UserID', '$Name', '$Address', '$Contact')";
-        
-        $result = mysqli_query($query)
-
+        $sqlListofUsers = "insert into users (User_number, Name, address, contact) value ('$User_number', '$Name', '$address', '$contact')";
+        $result=$conn->query($sqlListofUsers);
         if(!$result){
-            die("Query Failed".mysqli_error());
+            die("Failed".mysqli_error($conn));
         }
         else{
-            header('location:index.php?insert_msg=Your data has been added succesfully');
+            header('location:index.php?insert_msg=New user has been added!');
         }
-    }
-    
+    }  
 }
 
 
