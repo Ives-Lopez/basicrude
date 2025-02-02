@@ -13,7 +13,7 @@ include'bootstrap.php';
 <body>
 
 <div class="box1">
-<h1 id="main">STUDENT LIST</h1>
+<h1 id="main">USER LIST</h1>
 <h2 id="cyan">Name List</h2>
 <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button>
 </div>
@@ -47,9 +47,8 @@ include'bootstrap.php';
     </tbody>
 
   </table>
-</div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -81,6 +80,12 @@ include'bootstrap.php';
     </div>
   </div>
 </div>
+
+
+
+</div>
+
+
 
 
 </body>
