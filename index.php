@@ -53,44 +53,44 @@ include'bootstrap.php';
   
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mode1">
-              <p><b>Add User</b></p>
-            </div>
-            <div class="form-group">
-              <label for="User_number">User ID</label>
-              <input type="text" name="User_number" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="Name">Name</label>
-              <input type="text" name="Nmae" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="Address">Address</label>
-              <input type="text" name="Address" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="Contact">Contact</label>
-              <input type="text" name="Contact" class="form-control">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-secondary">Save</button>
+  <form>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+              <div class="mode1">
+                <p><b>Add User</b></p>
+              </div>
+              <div class="form-group">
+                <label for="User_number">User ID</label>
+                <input type="text" name="User_number" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" name="Nmae" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="Address">Address</label>
+                <input type="text" name="Address" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="Contact">Contact</label>
+                <input type="text" name="Contact" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Save</button>
+          </div>
         </div>
       </div>
-      
     </div>
-  </div>
+  </form>
   
 </div>
 
