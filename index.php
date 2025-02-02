@@ -65,13 +65,12 @@ include'bootstrap.php';
   }
 
 
-?>
+  ?>
+  <?php
 
-<?php
-
-if(isset($_GET['delete_msg'])){
-  echo "<h6>".$_GET['delete_msg']."<h6>";
-}
+  if(isset($_GET['delete_msg'])){
+    echo "<h6>".$_GET['delete_msg']."<h6>";
+  }
 
 
 ?>
